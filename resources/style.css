@@ -22,7 +22,26 @@ nav {
     justify-content: space-around;
 }
 
-nav a {
+a {
     color: black;
     text-decoration: none;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+}
+
+.text {
+    padding: 2rem 4rem 4rem 10rem;
+}
+
+#projects {
+    padding: 2rem 8rem 4rem 10rem;
+}
+
+#projects ul {
+    margin: 1rem 0 0 1rem;
+    line-height: 2rem;
+    font-weight: 600;
 }
