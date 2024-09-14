@@ -62,11 +62,12 @@ a {
 }
 
 .popup {
-    height: 55rem;
+    height: 48rem;
     width: 50rem;
     border: 0.5rem solid rgb(112, 112, 112);
     border-radius: 1rem;
     padding: 4rem;
+    margin-left: 10rem;
     position: absolute;
     visibility: hidden;
     background-color: white;

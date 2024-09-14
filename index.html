@@ -20,6 +20,42 @@
         </nav>
     </header>
     <main>
+        <div class="popup" id="popup1">
+            <h2>NetWork Hub</h2>
+            <img src="./resources/images/network_hub.png" alt="webpage Network Hub">
+            <h3>Project Summary</h3>
+            <p>The goal of making this website was for me to learn the basics of JS and how it can be used. The websites function is to generate a chat, or videocall, between two users, based on their similar interests.</p>
+            <h3>Built With:</h3>
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>The help of a friend</li>
+            </ul>
+            <button type="button" onclick="closePopup1()">OK</button>
+        </div>
+        <div class="popup" id="popup2">
+            <h2>WebDev Agency</h2>
+            <img src="./resources/images/web_dev_agency.png" alt="webpage WebDev Agency">
+            <h3>Project Summary</h3>
+            <p>The goal of this website was to create a sketch of my dream; a web development agency. I built it in my early web development stages, where it also served me as great practice of my newly acquired skills.</p>
+            <h3>Built With:</h3>
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>Knowledge from online resources including chatGPT</li>
+            </ul>
+            <button type="button" onclick="closePopup2()">OK</button>
+        </div>
+        <div class="popup" id="popup3">
+            <h2>Evening Journal</h2>
+            <img src="./resources/images/evening_journal.png" alt="webpage Evening Journal">
+            <h3>Project Summary</h3>
+            <p>The goal of this website was to create a personal thought space that I could go back to whenever I felt like it. I also created it since it's very tidy and difficult to lose, compared to a physical book.</p>
+            <h3>Built With:</h3>
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>Knowledge from online resources including chatGPT</li>
+            </ul>
+            <button type="button" onclick="closePopup3()">OK</button>
+        </div>
         <div id="about">
             <div class="text">
                 <h2>About Me</h2>
@@ -38,44 +74,9 @@
             <h2>Projects</h2>
             <ul>
                 <li><button type="button" onclick="openPopup1()" id="open">Network Hub</button></li>
-                <div class="popup" id="popup1">
-                    <h2>NetWork Hub</h2>
-                    <img src="./resources/images/network_hub.png" alt="webpage Network Hub">
-                    <h3>Project Summary</h3>
-                    <p>The goal of making this website was for me to learn the basics of JS and how it can be used. The websites function is to generate a chat, or videocall, between two users, based on their similar interests.</p>
-                    <h3>Built With:</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>The help of a friend</li>
-                    </ul>
-                    <button type="button" onclick="closePopup1()">OK</button>
-                </div>
                 <li><button type="button" onclick="openPopup2()" id="open">WebDev Agency</button></li>
-                <div class="popup" id="popup2">
-                    <h2>WebDev Agency</h2>
-                    <img src="./resources/images/web_dev_agency.png" alt="webpage WebDev Agency">
-                    <h3>Project Summary</h3>
-                    <p>The goal of this website was to create a sketch of my dream; a web development agency. I built it in my early web development stages, where it also served me as great practice of my newly acquired skills.</p>
-                    <h3>Built With:</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>Knowledge from online resources including chatGPT</li>
-                    </ul>
-                    <button type="button" onclick="closePopup2()">OK</button>
-                </div>
                 <li><button type="button" onclick="openPopup3()" id="open">Evening Journal</button></li>
-                <div class="popup" id="popup3">
-                    <h2>Evening Journal</h2>
-                    <img src="./resources/images/evening_journal.png" alt="webpage Evening Journal">
-                    <h3>Project Summary</h3>
-                    <p>The goal of this website was to create a personal thought space that I could go back to whenever I felt like it. I also created it since it's very tidy and difficult to lose, compared to a physical book.</p>
-                    <h3>Built With:</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>Knowledge from online resources including chatGPT</li>
-                    </ul>
-                    <button type="button" onclick="closePopup3()">OK</button>
-                </div>
+                
             </ul>
         </div>
         <div id="achievements">
