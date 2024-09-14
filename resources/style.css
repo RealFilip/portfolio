@@ -45,3 +45,65 @@ a {
     line-height: 2rem;
     font-weight: 600;
 }
+
+#open {
+    background: none;       /* Removes the background */
+    border: none;           /* Removes the border */
+    padding: 0;             /* Removes any padding */
+    margin: 0;              /* Removes any margin */
+    font: inherit;          /* Inherits font properties like size, family, weight */
+    color: inherit;         /* Inherits text color */
+    text-align: inherit;    /* Inherits text alignment */
+    outline: none;          /* Removes the default focus outline */
+}
+
+#open:hover{
+    cursor: pointer;
+}
+
+.popup {
+    height: 55rem;
+    width: 50rem;
+    border: 0.5rem solid rgb(112, 112, 112);
+    border-radius: 1rem;
+    padding: 4rem;
+    position: absolute;
+    visibility: hidden;
+    background-color: white;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+}
+
+.popup h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.popup img {
+    width: 41rem;
+}
+
+.popup h3 {
+    font-weight: 650;
+    margin-top: 1.5rem;
+}
+
+.popup button {
+    margin: 0 18rem;
+    font-size: 1.4rem;
+    padding: 0.2rem;
+    background-color: grey;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.popup button:hover {
+    cursor: pointer;
+}
+
+#skills {
+    padding: 2rem 8rem 4rem 10rem;
+}

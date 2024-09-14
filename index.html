@@ -37,11 +37,98 @@
         <div id="projects">
             <h2>Projects</h2>
             <ul>
-                <li>Network Hub</li>
-                <li></li>
-                <li></li>
+                <li><button type="button" onclick="openPopup1()" id="open">Network Hub</button></li>
+                <div class="popup" id="popup1">
+                    <h2>NetWork Hub</h2>
+                    <img src="./resources/images/network_hub.png" alt="webpage Network Hub">
+                    <h3>Project Summary</h3>
+                    <p>The goal of making this website was for me to learn the basics of JS and how it can be used. The websites function is to generate a chat, or videocall, between two users, based on their similar interests.</p>
+                    <h3>Built With:</h3>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>The help of a friend</li>
+                    </ul>
+                    <button type="button" onclick="closePopup1()">OK</button>
+                </div>
+                <li><button type="button" onclick="openPopup2()" id="open">WebDev Agency</button></li>
+                <div class="popup" id="popup2">
+                    <h2>WebDev Agency</h2>
+                    <img src="./resources/images/web_dev_agency.png" alt="webpage WebDev Agency">
+                    <h3>Project Summary</h3>
+                    <p>The goal of this website was to </p>
+                    <h3>Built With:</h3>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                    <button type="button" onclick="closePopup2()">OK</button>
+                </div>
+                <li><button type="button" onclick="openPopup3()" id="open">Evening Journal</button></li>
+                <div class="popup" id="popup3">
+                    <h2>Evening Journal</h2>
+                    <img src="./resources/images/evening_journal.png" alt="webpage Evening Journal">
+                    <h3>Project Summary</h3>
+                    <p>The goal of this website was to </p>
+                    <h3>Built With:</h3>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Knowledge from online resources including chatGPT</li>
+                    </ul>
+                    <button type="button" onclick="closePopup3()">OK</button>
+                </div>
             </ul>
         </div>
+        <div id="skills">
+            <h2>Skills</h2>
+        </div>
     </main>
+    <script>
+        let popup1 = document.getElementById("popup1");
+        let popup2 = document.getElementById("popup2");
+        let popup3 = document.getElementById("popup3");
+
+        let openCheck = 0;
+
+        function openPopup1(){
+            if (openCheck === 0){
+                openCheck = 1;
+                popup1.classList.add("open-popup");
+            }
+        }
+
+        function closePopup1(){
+            if (openCheck === 1){
+                openCheck = 0;
+                popup1.classList.remove("open-popup");
+            }
+        }
+
+        function openPopup2(){
+            if (openCheck === 0){
+                openCheck = 1;
+                popup2.classList.add("open-popup");
+            }
+        }
+
+        function closePopup2(){
+            if (openCheck === 1){
+                openCheck = 0;
+                popup2.classList.remove("open-popup");
+            }
+        }
+
+        function openPopup3(){
+            if (openCheck === 0){
+                openCheck = 1;
+                popup3.classList.add("open-popup");
+            }
+        }
+
+        function closePopup3(){
+            if (openCheck === 1){
+                openCheck = 0;
+                popup3.classList.remove("open-popup");
+            }
+        }
+    </script>
 </body>
 </html>
