@@ -97,13 +97,19 @@ a {
     padding: 0.2rem;
     background-color: grey;
     color: white;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
 }
 
 .popup button:hover {
     cursor: pointer;
 }
 
-#skills {
+#achievements {
     padding: 2rem 8rem 4rem 10rem;
+}
+
+#achievements ul {
+    margin: 1rem 0 0 1rem;
+    line-height: 2rem;
+    font-weight: 550;
 }
