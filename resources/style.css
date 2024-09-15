@@ -8,9 +8,9 @@
 header {
     height: 4rem;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 5fr 3fr;
     align-items: center;
-    padding-right: 10rem;
+    padding-right: 7rem;
 }
 
 h1 {
@@ -34,6 +34,14 @@ a {
 
 .text {
     padding: 2rem 4rem 4rem 10rem;
+}
+
+.img {
+    padding: 2rem 0 0 7.5rem;
+}
+
+.img img {
+    width: 13rem;
 }
 
 #projects {
@@ -74,6 +82,7 @@ a {
     transition: transform 0.4s, top 0.4s;
 }
 
+/*this class gets applied when one of the projects gets clicked*/
 .open-popup {
     visibility: visible;
 }
@@ -120,4 +129,169 @@ footer {
     align-items: center;
     justify-content: space-around;
     height: 5rem;
+}
+
+/*Adjusts the nav bar for small laptops*/
+@media (max-width: 1024px) {
+    header {
+        padding: 0;
+        grid-template-columns: 5fr 4fr;
+    }
+}
+
+/*Tablet adjustments*/
+@media (max-width: 768px) {
+    h1 {
+        margin-left: 5rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        font-size: 1rem;
+    }
+
+    nav h4 {
+        font-weight: 100;
+        font-size: 0.8rem;
+    }
+
+    .popup {
+        margin: 0;
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .img {
+        padding: 3rem 0 0 3.8rem;
+    }
+    
+    .img img {
+        width: 13rem;
+    }
+
+    .text, #projects, #achievements {
+        padding-left: 5rem;
+    }
+}
+
+/*Mobile adjustments, all for size L, some for M + S*/
+@media (max-width: 430px) {
+    header {
+        height: 6rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    h1 {
+        display: block;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        font-size: 1rem;
+    }
+
+    nav h4 {
+        font-weight: 100;
+    }
+
+    .popup {
+        height: 38rem;
+        border: 0.2rem solid rgb(112, 112, 112);
+        padding: 1.5rem;
+    }
+    
+    .popup h2 {
+        margin-bottom: 1rem;
+    }
+    
+    .popup img {
+        width: 23.2rem;
+    }
+    
+    .popup h3 {
+        font-weight: 650;
+        margin-top: 1.5rem;
+    }
+    
+    .popup button {
+        margin-right: 0;
+        margin-left: 9rem;
+    }
+
+    #about {
+        display: block;
+    }
+    
+    .text {
+        padding: 2rem;
+    }
+
+    .img {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img img {
+        width: 13rem;
+    }
+
+    #achievements {
+        padding: 2rem;
+    }
+
+    .text, #projects, #achievements {
+        padding-left: 2rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        height: 5rem;
+        font-size: 0.8rem;
+    }
+}
+
+/*Mobile M adjustments*/
+@media (max-width: 380px) {
+    .popup {
+        height: 36rem;
+    }
+
+    .popup img {
+        width: 20.2rem;
+    }
+
+    .popup button {
+        margin-right: 0;
+        margin-left: 8.5rem;
+    }
+}
+
+/*Mobile S adjustments*/
+@media (max-width: 325px) {
+    .popup {
+        height: 36rem;
+    }
+
+    .popup img {
+        width: 16.7rem;
+    }
+
+    .popup button {
+        margin-right: 0;
+        margin-left: 7rem;
+    }
 }
