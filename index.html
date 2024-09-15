@@ -68,7 +68,7 @@
                 <br>
                 <p>Fun fact! I speak Norwegian, Russian, English, Czech and French.</p>
             </div>
-            <div class="img">
+            <div class="img" id="img">
                 <img src="./resources/images/pfp.png" alt="profile picture">
             </div>
         </div>
@@ -99,6 +99,7 @@
         let popup1 = document.getElementById("popup1");
         let popup2 = document.getElementById("popup2");
         let popup3 = document.getElementById("popup3");
+        let hiddenIMG = document.getElementById("img");
 
         let openCheck = 0;
 
@@ -106,6 +107,7 @@
             if (openCheck === 0){
                 openCheck = 1;
                 popup1.classList.add("open-popup");
+                hiddenIMG.classList.add("hide-image");
             }
         }
 
@@ -113,6 +115,7 @@
             if (openCheck === 1){
                 openCheck = 0;
                 popup1.classList.remove("open-popup");
+                hiddenIMG.classList.remove("hide-image");
             }
         }
 
@@ -120,6 +123,7 @@
             if (openCheck === 0){
                 openCheck = 1;
                 popup2.classList.add("open-popup");
+                hiddenIMG.classList.add("hide-image");
             }
         }
 
@@ -127,6 +131,7 @@
             if (openCheck === 1){
                 openCheck = 0;
                 popup2.classList.remove("open-popup");
+                hiddenIMG.classList.remove("hide-image");
             }
         }
 
@@ -134,6 +139,7 @@
             if (openCheck === 0){
                 openCheck = 1;
                 popup3.classList.add("open-popup");
+                hiddenIMG.classList.add("hide-image");
             }
         }
 
@@ -141,6 +147,7 @@
             if (openCheck === 1){
                 openCheck = 0;
                 popup3.classList.remove("open-popup");
+                hiddenIMG.classList.remove("hide-image");
             }
         }
     </script>
